@@ -1,15 +1,50 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: #ccc;
+  
+}
+
+.head {
+  text-align: center;
+  margin-top: 30px;
+  color: bisque;
+  background-color: cornflowerblue;
+  padding: 20px;
 }
 
 
 .horned{
   display:flex;
   justify-content: space-between;
+  margin-top: 100px;
+  padding-left: 20px;
+  
 }
 
-.horned image{
-  width: 300px;
+.horned img{
+  width: 200px;
+  height: 200px;
+}
+
+
+
+ .info .logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.footer{
+  margin-top: 100px;
+  text-align: center;
+  color: bisque;
+  background-color: cornflowerblue;
+  padding: 20px;
+}
+
+span{
+ position: relative;
+ top: 18px;
+ left: 20px;
 }
