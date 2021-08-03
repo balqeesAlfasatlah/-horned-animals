@@ -1,18 +1,18 @@
-import React , { Component } from 'react';
+import React, { Component } from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Card } from 'react-bootstrap'
 
-class App extends Component{
+
+class App extends Component {
     render(){
-        return(
+        return (
             <div className='app'>
-               <Header/>
-               <Main/>
-               <Footer/>
+                <Header/>
+                <Main/>
+                <Footer/>
             </div>
         )
     }
