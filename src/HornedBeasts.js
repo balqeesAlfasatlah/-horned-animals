@@ -21,19 +21,25 @@ class HornedBeasts extends Component {
 
     render() {
         return (
-            <div className='info'>
-                
-                <Card style={{ paddingBottom: 30 }}>
-                    <Container>
+            <div>
 
-                        <h2>{this.props.title}</h2>
-                        <img src={this.props.imageSrc} alt={this.props.title} style={{ width: '200' }} />
-                        <p>{this.props.description}</p>
-                        <img className='logo' src={this.props.imglogo} onClick={this.counterHandler} />
-                        <span>{this.state.counter}</span>
-
-                    </Container>
-                </Card>
+                <Row xs={1} md={1} className="g-4">
+                     
+                        <Col>
+                            <Card style={{width : '20rem' , paddingTop: 50}}>
+                                <Card.Img variant="top" src={this.props.imageSrc} alt={this.props.title} style={{width : '20rem'}} />
+                                <Card.Body>
+                                    <Card.Title>{this.props.title}</Card.Title>
+                                    <Card.Text>
+                                        {this.props.description}
+                                    </Card.Text>
+                                    <Card.Img src={this.props.imglogo} onClick={this.counterHandler} style={{width : '30px' , height : '30px'}}/>
+                                    <Card.Text>{this.state.counter} </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    
+                </Row>
             </div>
         )
     }

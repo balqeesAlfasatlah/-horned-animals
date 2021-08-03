@@ -9,6 +9,7 @@ import { Card } from 'react-bootstrap'
 class App extends Component{
     render(){
         return(
+            
             <div className='app'>
                <Header/>
                <Main/>
