@@ -73,36 +73,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Number and name of feature 1 :
 
 
-+ Estimate of time needed to complete: 25 minutes
++ Estimate of time needed to complete: the whole day and night
 
-+ Start time: 6:30pm 
++ Start time: 4:30pm 
 
-+ Finish time: 6:55pm
++ Finish time: i submit in the deadline but its not working yet
 
-+ Actual time needed to complete: 15 minutes
-
-
----
-## Number and name of feature 2 :
-
-
-+ Estimate of time needed to complete: 2 houres
-
-+ Start time: 7pm 
-
-+ Finish time: 9pm
-
-+ Actual time needed to complete: 1 hour
----
-## Number and name of feature 3 :
-
-
-+ Estimate of time needed to complete: 2 houres
-
-+ Start time: 9:30pm 
-
-+ Finish time: 11:30pm
-
-+ Actual time needed to complete: 40 minutes
++ Actual time needed to complete: day
 
 
