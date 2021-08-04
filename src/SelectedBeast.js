@@ -30,4 +30,3 @@ class SelectedBeasts extends Component {
 }
 
 export default SelectedBeasts;
-
