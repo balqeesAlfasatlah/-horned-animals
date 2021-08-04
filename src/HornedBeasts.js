@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import {Row, Col, Card, } from 'react-bootstrap'
+
 
 
 
 class HornedBeasts extends Component {
 
+
+
     constructor(props) {
         super(props)
         this.state = {
-            counter: props.counter
+            counter: 0
+            
         };
     }
     counterHandler = () => {
@@ -18,7 +22,15 @@ class HornedBeasts extends Component {
         })
     }
 
+   display=()=>{
 
+        this.props.showDataList({
+            imageUrl : this.props.imageUrl , 
+            title : this.props.title , 
+            description : this.props.description
+         })    
+   }
+    
     render() {
         return (
             <div>
@@ -27,7 +39,7 @@ class HornedBeasts extends Component {
                      
                         <Col>
                             <Card style={{width : '20rem' , paddingTop: 50}}>
-                                <Card.Img variant="top" src={this.props.imageSrc} alt={this.props.title} style={{width : '20rem'}} />
+                                <Card.Img variant="top" src={this.props.imageUrl} alt={this.props.title} style={{width : '20rem'}}/>
                                 <Card.Body>
                                     <Card.Title>{this.props.title}</Card.Title>
                                     <Card.Text>
@@ -35,6 +47,7 @@ class HornedBeasts extends Component {
                                     </Card.Text>
                                     <Card.Img src={this.props.imglogo} onClick={this.counterHandler} style={{width : '30px' , height : '30px'}}/>
                                     <Card.Text>{this.state.counter} </Card.Text>
+                                    <button onClick ={this.display} >click me</button>
                                 </Card.Body>
                             </Card>
                         </Col>

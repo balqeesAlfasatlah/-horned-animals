@@ -3,21 +3,50 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SelectedBeasts from './SelectedBeast';
+import dataofAnimal  from './data.json';
+
 
 
 
 class App extends Component {
-    render(){
- lab02
-        return(
-            
 
+
+    constructor(props){
+        super(props)
+        this.state ={
+          hornedList :dataofAnimal,
+          show : false ,
+          animal : {}
+        }
+    }
+
+
+    handlerShow=(data)=>{
+       this.setState ={
+        show : true ,
+        animal :data
+
+       }
+    }
+
+    handlerClose =()=>{
+        this.setState({
+            show : false 
+    
+           })
+    }
+
+
+    render() {
         return (
-             main
-            <div className='app'>
+
+            <div>
                 <Header/>
-                <Main/>
+                <Main showDataList = {this.handlerShow} data ={this.state.hornedList} />
+                <SelectedBeasts animal = {this.state.animal} showModal ={this.state.show} closeData= {this.handlerClose}/>
                 <Footer/>
+               
             </div>
         )
     }
