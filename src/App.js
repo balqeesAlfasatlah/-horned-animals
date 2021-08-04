@@ -3,7 +3,7 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SelectedBeasts from './SelectedBeast';
+import SelectedBeast from './SelectedBeast';
 import dataofAnimal  from './data.json';
 
 
@@ -23,11 +23,11 @@ class App extends Component {
 
 
     handlerShow=(data)=>{
-       this.setState ={
+       this.setState ({
         show : true ,
         animal :data
 
-       }
+       })
     }
 
     handlerClose =()=>{
@@ -44,7 +44,7 @@ class App extends Component {
             <div>
                 <Header/>
                 <Main showDataList = {this.handlerShow} data ={this.state.hornedList} />
-                <SelectedBeasts animal = {this.state.animal} showModal ={this.state.show} closeData= {this.handlerClose}/>
+                <SelectedBeast animal = {this.state.animal} showModal ={this.state.show} closeData= {this.handlerClose}/>
                 <Footer/>
                
             </div>
