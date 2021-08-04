@@ -47,7 +47,7 @@ class HornedBeasts extends Component {
                                     </Card.Text>
                                     <Card.Img src={this.props.imglogo}  style={{width : '30px' , height : '30px'}}/>
                                     <Card.Text>{this.state.counter} </Card.Text>
-                                    <button onClick ={this.display} >click me</button>
+                                    <button   onClick ={this.display} >click me</button>
                                 </Card.Body>
                             </Card>
                         </Col>
